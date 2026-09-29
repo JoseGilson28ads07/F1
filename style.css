@@ -1,0 +1,84 @@
+/* ===== VARIÁVEIS: para mudar as cores do site, altere aqui ===== */
+:root{--fundo:#0f0f12;--card:#1b1b21;--vermelho:#e10600;--branco:#fff;--cinza:#a7a7b0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}            /* rolagem suave */
+body{font-family:Arial,Helvetica,sans-serif;background:var(--fundo);color:var(--branco);line-height:1.6}
+a{color:inherit;text-decoration:none}
+section{padding:70px 20px;max-width:1150px;margin:auto}
+h2{font-size:2rem;margin-bottom:8px}
+h2::after{content:"";display:block;width:60px;height:4px;background:var(--vermelho);margin-top:8px}
+.sub{color:var(--cinza);margin:12px 0 30px}
+
+/* ===== CABEÇALHO ===== */
+.cabecalho{position:sticky;top:0;z-index:10;background:#000e;border-bottom:3px solid var(--vermelho)}
+.cabecalho .barra{max-width:1150px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:1.5rem;font-weight:900;font-style:italic}.logo span{color:var(--vermelho)}
+.menu{display:flex;gap:22px;list-style:none;align-items:center}
+.menu a{font-size:.9rem;font-weight:bold;transition:.3s}
+.menu a:hover{color:var(--vermelho)}
+.btn-login{background:var(--vermelho);padding:8px 18px;border-radius:6px}
+.btn-menu{display:none;background:none;border:2px solid #fff;color:#fff;font-size:1.4rem;padding:2px 10px;border-radius:6px;cursor:pointer}
+
+/* ===== HERO ===== */
+/* Para usar foto: troque o gradiente por url("img/circuitos/hero.jpg") */
+.hero{min-height:85vh;display:flex;align-items:center;padding:20px;
+ background:linear-gradient(100deg,#000 30%,#000a),repeating-linear-gradient(115deg,#222 0 40px,#181818 40px 80px)}
+.hero div{max-width:1150px;margin:auto;width:100%}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);max-width:700px;line-height:1.1}
+.hero p{color:var(--cinza);margin:18px 0 28px;font-size:1.1rem}
+.btn{display:inline-block;background:var(--vermelho);padding:14px 30px;border-radius:6px;font-weight:bold;border:0;color:#fff;cursor:pointer;transition:.3s}
+.btn:hover{background:#b30500;transform:translateY(-3px)}
+
+/* ===== GRID E CARDS ===== */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:var(--card);border-radius:10px;overflow:hidden;border-bottom:4px solid transparent;box-shadow:0 4px 14px #0008;transition:.3s}
+.card:hover{transform:translateY(-8px);border-color:var(--vermelho);box-shadow:0 10px 25px #e1060040}
+.card .texto{padding:18px}
+.card h3{margin-bottom:6px}
+.card p,.card li{color:var(--cinza);font-size:.92rem}
+.card ul{list-style:none;margin-top:8px}
+.tag{color:var(--vermelho);font-weight:bold;font-size:.8rem;text-transform:uppercase}
+/* Área da imagem: use <img> dentro dela quando tiver as fotos */
+.foto{height:170px;display:flex;align-items:center;justify-content:center;font-size:2.6rem;font-weight:900;font-style:italic;
+ background:linear-gradient(135deg,#2a2a33,#101014);color:var(--vermelho)}
+.foto img{width:100%;height:100%;object-fit:cover}
+.destaque a.card{padding:24px;text-align:center}
+.faixa{background:#15151a;max-width:none}
+.faixa>*{max-width:1150px;margin-left:auto;margin-right:auto}
+
+/* ===== LISTA DE CIRCUITOS ===== */
+.lista-pistas{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.lista-pistas a{border:1px solid var(--vermelho);padding:6px 14px;border-radius:20px;font-size:.85rem;transition:.3s}
+.lista-pistas a:hover{background:var(--vermelho)}
+
+/* ===== CALENDÁRIO ===== */
+.corrida{display:grid;grid-template-columns:60px 2fr 2fr 1fr 1fr;gap:12px;align-items:center;background:var(--card);padding:14px 18px;border-radius:8px;margin-bottom:10px;border-left:4px solid var(--vermelho);transition:.3s}
+.corrida:hover{background:#25252d}
+.etapa{font-size:1.4rem;font-weight:900;color:var(--vermelho)}
+.status{font-size:.8rem;font-weight:bold;text-align:center;padding:4px 8px;border-radius:20px;background:#333}
+
+/* ===== FORMULÁRIOS ===== */
+.pagina-form{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.form{background:var(--card);padding:34px;border-radius:12px;width:100%;max-width:400px;border-top:4px solid var(--vermelho)}
+.form label{display:block;margin:14px 0 4px;font-size:.9rem}
+.form input{width:100%;padding:11px;border-radius:6px;border:1px solid #444;background:#0f0f12;color:#fff}
+.form input:focus{outline:2px solid var(--vermelho)}
+.form .btn{width:100%;margin-top:22px}
+.form .links{margin-top:16px;font-size:.9rem;text-align:center;color:var(--cinza)}
+.form .links a{color:var(--vermelho)}
+.aviso{background:#e1060022;border:1px solid var(--vermelho);padding:8px;border-radius:6px;font-size:.8rem;margin-bottom:10px}
+
+/* ===== RODAPÉ ===== */
+.rodape{background:#000;border-top:3px solid var(--vermelho);padding:40px 20px;text-align:center;color:var(--cinza);font-size:.9rem}
+.rodape nav a,.rodape .redes a{margin:0 10px;color:#fff}
+.rodape nav a:hover,.rodape .redes a:hover{color:var(--vermelho)}
+.rodape p{margin-top:12px}
+
+/* ===== RESPONSIVO ===== */
+@media(max-width:850px){
+ .btn-menu{display:block}
+ .menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:#000;padding:20px;gap:16px}
+ .menu.aberto{display:flex}
+ .corrida{grid-template-columns:50px 1fr}
+ section{padding:50px 16px}
+}

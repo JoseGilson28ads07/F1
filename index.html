@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal sobre Fórmula 1: carros, pilotos, equipes, circuitos e calendário.">
+  <title>Pit Lane F1 | Portal de Fórmula 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= CABEÇALHO ================= -->
+<header class="cabecalho">
+  <div class="barra">
+    <a href="#inicio" class="logo">PIT LANE <span>F1</span></a>
+    <button class="btn-menu" aria-label="Abrir menu">☰</button>
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="#inicio">INÍCIO</a></li>
+        <li><a href="#f1">F1</a></li>
+        <li><a href="#carros">CARROS</a></li>
+        <li><a href="#pilotos">PILOTOS</a></li>
+        <li><a href="#equipes">EQUIPES</a></li>
+        <li><a href="#pistas">PISTAS</a></li>
+        <li><a href="#calendario">CALENDÁRIO</a></li>
+        <li><a href="login.html" class="btn-login">LOGIN</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ================= HERO ================= -->
+<div class="hero" id="inicio">
+  <div>
+    <h1>Velocidade, tecnologia e competição no mundo da Fórmula 1.</h1>
+    <p>Conheça carros, pilotos, equipes e as pistas mais famosas do planeta.</p>
+    <a href="#f1" class="btn">Explorar a F1</a>
+  </div>
+</div>
+
+<!-- Cards de destaque (atalhos para as seções) -->
+<section class="destaque" aria-label="Destaques">
+  <div class="grid">
+    <a href="#calendario" class="card"><p class="tag">Próxima corrida</p><h3>Calendário</h3></a>
+    <a href="#pilotos" class="card"><p class="tag">Pilotos</p><h3>Os craques do grid</h3></a>
+    <a href="#equipes" class="card"><p class="tag">Equipes</p><h3>Construtores</h3></a>
+    <a href="#pistas" class="card"><p class="tag">Circuitos</p><h3>Pistas lendárias</h3></a>
+    <a href="#carros" class="card"><p class="tag">Carros</p><h3>Máquinas da F1</h3></a>
+  </div>
+</section>
+
+<!-- ================= SOBRE A F1 ================= -->
+<section id="f1">
+  <h2>Sobre a Fórmula 1</h2>
+  <p class="sub">O básico para entender a principal categoria do automobilismo mundial.</p>
+  <div class="grid">
+    <article class="card"><div class="texto"><h3>O que é?</h3><p>Campeonato mundial de automobilismo com carros de monopostos, organizado pela FIA. Existe desde 1950.</p></div></article>
+    <article class="card"><div class="texto"><h3>A temporada</h3><p>Vários Grandes Prêmios em diferentes países. Pilotos e equipes somam pontos e disputam dois títulos: Pilotos e Construtores.</p></div></article>
+    <article class="card"><div class="texto"><h3>Equipes e pilotos</h3><p>Cada equipe constrói o próprio carro e tem dois pilotos. Mecânicos e engenheiros trabalham juntos em todas as etapas.</p></div></article>
+    <article class="card"><div class="texto"><h3>Grande Prêmio</h3><p>É um fim de semana de corrida: treinos livres, classificação (define o grid) e a corrida no domingo.</p></div></article>
+    <article class="card"><div class="texto"><h3>Como pontua</h3><p>Os primeiros colocados ganham pontos, e quem soma mais no fim do ano é campeão.</p></div></article>
+    <article class="card"><div class="texto"><h3>Curiosidade</h3><p>Um pit stop moderno pode durar pouco mais de 2 segundos.</p></div></article>
+  </div>
+</section>
+
+<!-- ================= CARROS ================= -->
+<!-- DADOS: para atualizar a temporada, altere os textos dos cards abaixo. Confira em formula1.com -->
+<section id="carros" class="faixa">
+  <h2>Carros da Fórmula 1</h2>
+  <p class="sub">Temporada 2026 (confira os dados oficiais antes de apresentar).</p>
+  <div class="grid">
+    <article class="card">
+      <div class="foto"><!-- <img src="img/carros/ferrari.jpg" alt="Ferrari SF-26"> -->SF-26</div>
+      <div class="texto"><p class="tag">2026 • Ferrari</p><h3>Ferrari SF-26</h3>
+        <p>Pilotos: Charles Leclerc e Lewis Hamilton.</p><p>Vermelho clássico da equipe mais tradicional do grid.</p></div>
+    </article>
+    <article class="card">
+      <div class="foto">MCL40</div>
+      <div class="texto"><p class="tag">2026 • McLaren</p><h3>McLaren MCL40</h3>
+        <p>Pilotos: Lando Norris e Oscar Piastri.</p><p>Famosa pelo laranja papaia.</p></div>
+    </article>
+    <article class="card">
+      <div class="foto">W17</div>
+      <div class="texto"><p class="tag">2026 • Mercedes</p><h3>Mercedes W17</h3>
+        <p>Pilotos: George Russell e Kimi Antonelli.</p><p>Equipe de longa história de títulos.</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= PILOTOS ================= -->
+<section id="pilotos">
+  <h2>Pilotos</h2>
+  <p class="sub">Alguns nomes do grid atual.</p>
+  <div class="grid">
+    <article class="card">
+      <div class="foto"><!-- <img src="img/pilotos/verstappen.jpg" alt="Max Verstappen"> -->3</div>
+      <div class="texto"><h3>Max Verstappen</h3><p class="tag">Red Bull • Holanda</p><p>Tetracampeão mundial (2021–2024).</p></div>
+    </article>
+    <article class="card">
+      <div class="foto">1</div>
+      <div class="texto"><h3>Lando Norris</h3><p class="tag">McLaren • Reino Unido</p><p>Campeão mundial de 2025.</p></div>
+    </article>
+    <article class="card">
+      <div class="foto">16</div>
+      <div class="texto"><h3>Charles Leclerc</h3><p class="tag">Ferrari • Mônaco</p><p>Piloto da Ferrari desde 2019, conhecido pela velocidade em uma volta.</p></div>
+    </article>
+    <article class="card">
+      <div class="foto">44</div>
+      <div class="texto"><h3>Lewis Hamilton</h3><p class="tag">Ferrari • Reino Unido</p><p>Heptacampeão mundial, estreou na Ferrari em 2025.</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= EQUIPES ================= -->
+<section id="equipes" class="faixa">
+  <h2>Equipes</h2>
+  <p class="sub">Para atualizar a temporada, edite pilotos e carro em cada card.</p>
+  <div class="grid">
+    <article class="card"><div class="texto"><div class="tag">Logo: img/equipes/ferrari.png</div><h3>Scuderia Ferrari</h3><ul><li>Pilotos: Leclerc e Hamilton</li><li>Carro: SF-26</li><li>Sede: Maranello, Itália</li></ul></div></article>
+    <article class="card"><div class="texto"><div class="tag">Logo: img/equipes/mclaren.png</div><h3>McLaren</h3><ul><li>Pilotos: Norris e Piastri</li><li>Carro: MCL40</li><li>Sede: Woking, Inglaterra</li></ul></div></article>
+    <article class="card"><div class="texto"><div class="tag">Logo: img/equipes/mercedes.png</div><h3>Mercedes</h3><ul><li>Pilotos: Russell e Antonelli</li><li>Carro: W17</li><li>Sede: Brackley, Inglaterra</li></ul></div></article>
+    <article class="card"><div class="texto"><div class="tag">Logo: img/equipes/redbull.png</div><h3>Red Bull Racing</h3><ul><li>Pilotos: Verstappen e Hadjar</li><li>Carro: RB22</li><li>Sede: Milton Keynes, Inglaterra</li></ul></div></article>
+  </div>
+</section>
+
+<!-- ================= CIRCUITOS ================= -->
+<section id="pistas">
+  <h2>Circuitos da Fórmula 1</h2>
+  <p class="sub">Clique em uma pista da lista para ir direto ao card.</p>
+  <!-- "Mapa/lista" de circuitos -->
+  <div class="lista-pistas" aria-label="Lista de circuitos">
+    <a href="#interlagos">📍 Interlagos</a><a href="#monaco">📍 Mônaco</a>
+    <a href="#monza">📍 Monza</a><a href="#suzuka">📍 Suzuka</a>
+  </div>
+  <div class="grid">
+    <article class="card" id="interlagos">
+      <div class="foto"><!-- <img src="img/circuitos/interlagos.jpg" alt="Autódromo de Interlagos"> -->🇧🇷</div>
+      <div class="texto"><h3>Autódromo José Carlos Pace (Interlagos)</h3><p class="tag">Brasil • São Paulo</p>
+        <ul><li>Extensão: 4,309 km</li><li>Curvas: 15</li><li>Sentido anti-horário, com muitas subidas e descidas.</li></ul>
+        <p>Palco de corridas emocionantes e clima de festa da torcida.</p></div>
+    </article>
+    <article class="card" id="monaco">
+      <div class="foto">🇲🇨</div>
+      <div class="texto"><h3>Circuito de Mônaco</h3><p class="tag">Mônaco • Monte Carlo</p>
+        <ul><li>Extensão: 3,337 km</li><li>Curvas: 19</li><li>Pista de rua, estreita e com pouquíssimo espaço para erros.</li></ul>
+        <p>Ultrapassar ali é muito difícil, por isso a classificação vale muito.</p></div>
+    </article>
+    <article class="card" id="monza">
+      <div class="foto">🇮🇹</div>
+      <div class="texto"><h3>Autodromo Nazionale Monza</h3><p class="tag">Itália • Monza</p>
+        <ul><li>Extensão: 5,793 km</li><li>Curvas: 11</li><li>Conhecido como "Templo da Velocidade".</li></ul>
+        <p>Longas retas e velocidades altíssimas.</p></div>
+    </article>
+    <article class="card" id="suzuka">
+      <div class="foto">🇯🇵</div>
+      <div class="texto"><h3>Circuito de Suzuka</h3><p class="tag">Japão • Suzuka</p>
+        <ul><li>Extensão: 5,807 km</li><li>Curvas: 18</li><li>Traçado em formato de "8", com cruzamento de pista.</li></ul>
+        <p>Muito querido pelos pilotos pelo desafio técnico.</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= CALENDÁRIO ================= -->
+<!-- ATENÇÃO: datas e status precisam ser conferidos em formula1.com/en/racing/2026 e digitados manualmente. -->
+<section id="calendario" class="faixa">
+  <h2>Calendário da Temporada</h2>
+  <p class="sub">Exemplo de estrutura. Para cada etapa, copie um bloco &lt;article&gt; e altere os dados.</p>
+
+  <article class="corrida">
+    <span class="etapa">01</span>
+    <div><strong>GP da Austrália</strong><br><small>Austrália</small></div>
+    <div>Albert Park, Melbourne</div>
+    <div>DATA: preencher</div>
+    <span class="status">STATUS</span>
+  </article>
+  <article class="corrida">
+    <span class="etapa">02</span>
+    <div><strong>GP do Japão</strong><br><small>Japão</small></div>
+    <div>Suzuka</div>
+    <div>DATA: preencher</div>
+    <span class="status">STATUS</span>
+  </article>
+  <article class="corrida">
+    <span class="etapa">03</span>
+    <div><strong>GP da Itália</strong><br><small>Itália</small></div>
+    <div>Monza</div>
+    <div>DATA: preencher</div>
+    <span class="status">STATUS</span>
+  </article>
+  <article class="corrida">
+    <span class="etapa">04</span>
+    <div><strong>GP do Brasil</strong><br><small>Brasil</small></div>
+    <div>Interlagos, São Paulo</div>
+    <div>DATA: preencher</div>
+    <span class="status">STATUS</span>
+  </article>
+</section>
+</main>
+
+<!-- ================= RODAPÉ ================= -->
+<footer class="rodape">
+  <p class="logo">PIT LANE <span>F1</span></p>
+  <p>Portal informativo sobre a Fórmula 1.</p>
+  <nav aria-label="Links do rodapé"><a href="#inicio">Início</a><a href="#carros">Carros</a><a href="#pilotos">Pilotos</a><a href="#pistas">Pistas</a><a href="login.html">Login</a></nav>
+  <div class="redes"><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">X</a></div>
+  <p>Projeto acadêmico da disciplina de Web Front End — ADS.<br>Desenvolvido por: [seu nome aqui]</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
